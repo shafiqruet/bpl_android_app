@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_today_black_24dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_schedule_part"
+            android:icon="@drawable/ic_featured_play_list_black_24dp"
+            android:title="Match Schedule" />
+
+        <item
+            android:id="@+id/nav_schedule_part_two"
+            android:icon="@drawable/ic_featured_play_list_black_24dp"
+            android:title="Match Schedule 2" />
+
+        <item
+            android:id="@+id/nav_team_squad"
+            android:icon="@drawable/ic_featured_play_list_black_24dp"
+            android:title="Team Squad" />
+
+        <item
+            android:id="@+id/nav_live_scores"
+            android:icon="@drawable/ic_featured_play_list_black_24dp"
+            android:title="Live Scores" />
+
+        <item
+            android:id="@+id/nav_point_table"
+            android:icon="@drawable/ic_featured_play_list_black_24dp"
+            android:title="Point Table" />
+
+        <item
+            android:id="@+id/nav_about_bpl_2019"
+            android:icon="@drawable/ic_featured_play_list_black_24dp"
+            android:title="BPL 2018 - 2019" />
+
+        <item
+            android:id="@+id/nav_bpl_statistics"
+            android:icon="@drawable/ic_featured_play_list_black_24dp"
+            android:title="BPL Statistics" />
+
+        <item
+            android:id="@+id/nav_about_bpl"
+            android:icon="@drawable/ic_featured_play_list_black_24dp"
+            android:title="History of BPL" />
+
+        <item
+            android:id="@+id/nav_exit_apps"
+            android:icon="@drawable/ic_featured_play_list_black_24dp"
+            android:title="Exit Apps" />
+
+    </group>
+
+</menu>

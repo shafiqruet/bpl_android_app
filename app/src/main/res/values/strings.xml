@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BPL 2018 - 2019</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="admob_app_id">ca-app-pub-2362382049091494~2611931021</string>
+    <string name="banner_home_footer">ca-app-pub-2362382049091494/8602624302</string>
+    <string name="interstitial_full_screen">ca-app-pub-2362382049091494/2475241791</string>
+    <string name="rewarded_video">ca-app-pub-2362382049091494/3158725933</string>
+</resources>

@@ -1,0 +1,611 @@
+<style>
+    .time-counter {
+        font-size: 34px;
+        color: #f4fbf0;
+        font-family: inherit;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 3px 5px 5px 5px;
+        font-style: italic;
+    }
+
+    .match-title-top {
+        text-align: center;
+        font-size: 18px;
+        color: #f1f1f1;
+        border-bottom: 1px solid #ada7a7;
+        background-color: #2196F3;
+        border-radius: 3px 3px 0 0;
+        padding: 10px;
+        margin-top: -5px;
+        margin-right: -5px;
+        margin-bottom: -5px;
+        margin-left: -15px;
+        font-weight: normal;
+    }
+
+    .main-time-counter-area {
+        text-align: center;
+        background-color: #1565C0;
+        border: 1px solid #ccc;
+        width: 98.5%;
+        float: left;
+        margin: 0 auto;
+        padding: 8px 0;
+        border-radius: 4px 4px 0 0;
+    }
+
+    .title-area {
+        float: left;
+        text-indent: 20px;
+        padding-top: 2px;
+        color: #f4fbf0;
+        font-size: 25px;
+    }
+
+    .main-content {
+        font-size: 12px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-top: 7px;
+        float: left;
+    }
+
+    img {
+        width: 30px;
+        margin-top: 3px;
+        border: 1px solid #ccc;
+    }
+
+    .match-title {
+        text-align: center;
+        font-size: 20px;
+        color: #f1f1f1;
+        padding: 10px;
+        border-bottom: 1px solid #ada7a7;
+        background-color: #2196F3;
+        border-radius: 2px 2px 0 0;
+    }
+
+    .group-first-section {
+        width: 48%;
+        float: left;
+        padding: 10px 0;
+    }
+
+    .group-second-section {
+        width: 46%;
+        float: left;
+        padding: 10px 0;
+    }
+
+    .name-list {
+        font-size: 12px;
+        color: #061329;
+        font-weight: bold;
+        text-shadow: 3px 1px #e9dfdf;
+        vertical-align: top;
+        line-height: 37px;
+    }
+
+    .second-list {
+        padding: 0 0 10px 0;
+    }
+
+    .first-column {
+        padding-left: 16px;
+    }
+
+    .over-all-info li {
+        color: #061329;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 15px;
+    }
+
+    li {
+        font-family: Arial;
+        font-size: 12px;
+        line-height: 24px;
+    }
+
+    li:before {
+        background-color: #14CCBB;
+        border-radius: 50%;
+        content: "";
+        display: inline-block;
+        margin-right: 5px;
+        height: 10px;
+        width: 10px;
+    }
+
+    .first-title-info {
+        margin-top: 10px;
+        width: 98.7%;
+    }
+
+    .time-area {
+        float: left;
+        font-size:25px;
+    }
+    .time-day {
+        float: left;
+        font-size:24px;
+        color: #f4e6e6cc;
+    }
+    .time-counter-area {
+        float: left;
+        padding-left:10px;
+    }
+td {
+        border: 1px solid #ccc;
+        font-size: 12px;
+        text-align: center;
+        color: #0645ad;
+        padding: 5px;
+    }
+
+    th {
+        border: 1px solid #ccc;
+        color: #222;
+        font-size: 12px;
+        text-align: center;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    table.team-statistics {
+        background-color: #f8f9fa;
+        color: #222;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table.team-statistics td:first-child, table.team-statistics th:first-child {
+        border-left: none;
+    }
+
+    table.team-statistics td:last-child, table.team-statistics th:last-child {
+        border-right: none;
+    }
+    .last-border {
+        border-bottom: none;
+    }
+
+    table tr:nth-child(odd) td{
+        background:#fff;
+    }
+    table tr:nth-child(even) td{
+        background:#f5f5f5;
+    }
+
+.match-title-info {
+        text-align: center;
+    font-size: 12px;
+    color: #036fbc;
+    padding: 2px 10px;
+    /* border-bottom: 1px solid #ada7a7; */
+    background-color: #fff;
+    border-radius: 2px 2px;
+    font-weight: bold;
+        width: 94%;
+    float: left;
+    }
+
+.image-info {
+float:left;
+width:30%;
+}
+.content-info {
+float:left;
+width:70%;
+margin: 20px 0 0 0;
+}
+</style>
+
+<div class="main-content " style="width:100%;">
+    <div class="match-title-info">
+        <div class="content-info">
+            For live scores & Point table click Live Scores & Point Table link. Please see image file.
+        </div>
+        <div class="image-info"> <img src="file:///android_asset/images/info.png" style="width:65px"
+                                      alt="RUS" title="RUS"
+                                      class="fi-RUS fi-flag--3"></div>
+    </div>
+
+</div>
+
+<div class="main-content first-content-info" style="width:100%;">
+    <div class="match-title">
+        Team List
+    </div>
+    <div class="group-first-section first-column">
+        <span class="img-tag"> <img src="file:///android_asset/images/cht.png"
+                                    alt="RUS" title="RUS"
+                                    class="fi-RUS fi-flag--3"></span>
+        <span class="name-list">Chittagong Vikings</span>
+
+    </div>
+
+    <div class="group-second-section">
+         <span class="img-tag"> <img src="file:///android_asset/images/com.png"
+                                     alt="RUS" title="RUS"
+                                     class="fi-RUS fi-flag--3"></span>
+        <span class="name-list">Comilla Victorians</span>
+
+    </div>
+
+    <div class="group-first-section second-list first-column">
+        <span class="img-tag"> <img src="file:///android_asset/images/dha.png"
+                                    alt="RUS" title="RUS"
+                                    class="fi-RUS fi-flag--3"></span>
+        <span class="name-list">Dhaka Dynamites </span>
+
+    </div>
+
+    <div class="group-second-section second-list">
+        <span class="img-tag"> <img src="file:///android_asset/images/khu.png"
+                                    alt="RUS" title="RUS"
+                                    class="fi-RUS fi-flag--3"></span>
+        <span class="name-list">Khulna Titans</span>
+
+    </div>
+
+    <div class="group-first-section second-list first-column">
+        <span class="img-tag"> <img src="file:///android_asset/images/raj.png"
+                                    alt="RUS" title="RUS"
+                                    class="fi-RUS fi-flag--3"></span>
+        <span class="name-list">Rajshahi Kings</span>
+
+    </div>
+
+    <div class="group-second-section second-list">
+        <span class="img-tag"> <img src="file:///android_asset/images/ran.png"
+                                    alt="RUS" title="RUS"
+                                    class="fi-RUS fi-flag--3"></span>
+        <span class="name-list">Rangpur Riders </span>
+
+    </div>
+
+    <div class="group-second-section second-list first-column">
+        <span class="img-tag"> <img src="file:///android_asset/images/syl.png"
+                                    alt="RUS" title="RUS"
+                                    class="fi-RUS fi-flag--3"></span>
+        <span class="name-list"> Sylhet Sixers</span>
+    </div>
+</div>
+
+<div class="main-content " style="width:100%;">
+    <div class="match-title">
+        2018 - 2019 BPL - Overall
+    </div>
+    <div class="">
+        <ul class="over-all-info">
+            <li> Dates : 5 January – 8 February 2019</li>
+            <li> Total Team: 7, Total Match: 46</li>
+            <li> Tournament format(s): Double Round-robin and playoffs</li>
+            <li> A+ Category Players : Liton Das, Mustafizur Rahman, Shakib Al Hasan, Tamim Iqbal,
+                Mushfiqur Rahim, Mahmudullah, Mashrafe Mortaza
+            </li>
+            <li> Teams will be restricted to having four overseas players per side, instead of five
+                in the previous edition of the tournament
+            </li>
+            <li>
+                This season 3 venues will host all matches in 4 phases. There will be review [UDRS]
+                in the BPL
+            </li>
+            <li> Each team will have a review in every innings.
+                There will be one foreign umpire in each match."
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="main-content" style="width:100%;">
+    <div class="match-title">
+        Highest total overall (Team Totals)
+    </div>
+    <table class="team-statistics">
+        <tbody>
+        <tr>
+            <th>Team</th>
+            <th>Total</th>
+            <th>Overs</th>
+            <th>Opponent</th>
+            <th>Season</th>
+            <th>Venue</th>
+        </tr>
+        <tr>
+            <td>Dhaka Dynamites</td>
+            <td>217/4</td>
+            <td>20</td>
+            <td>Rangpur Riders</td>
+            <td>2013</td>
+            <td>Mirpur</td>
+        </tr>
+        <tr>
+            <td>Khulna Titans</td>
+            <td>213/5</td>
+            <td>20</td>
+            <td>Rajshahi Kings</td>
+            <td>2017</td>
+            <td>Chittagong</td>
+        </tr>
+        <tr>
+            <td>Rajshahi Kings</td>
+            <td>213/6</td>
+            <td>20</td>
+            <td>Barisal Bulls</td>
+            <td>2013</td>
+            <td>MA Aziz</td>
+        </tr>
+        <tr>
+            <td>Chittagong Vikings</td>
+            <td>211/5</td>
+            <td>20</td>
+            <td>Sylhet Sixers</td>
+            <td>2017</td>
+            <td>Chittagong</td>
+        </tr>
+        <tr>
+            <td class="last-border">Barisal Bulls</td>
+            <td class="last-border">209/7</td>
+            <td class="last-border">20</td>
+            <td class="last-border">Duronto Rajshahi</td>
+            <td class="last-border">2013</td>
+            <td class="last-border">Chittagong</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="main-content" style="width:100%;">
+    <div class="match-title">
+        Lowest total overall (Team Totals)
+    </div>
+    <table class="team-statistics">
+        <tbody>
+        <tr>
+            <th>Team</th>
+            <th>Total</th>
+            <th>Overs</th>
+            <th>Opponent</th>
+            <th>Season</th>
+            <th>Venue</th>
+        </tr>
+        <tr>
+            <td>Khulna Titans</td>
+            <td>44/10</td>
+            <td>10.4</td>
+            <td>Rangpur Riders</td>
+            <td>2016</td>
+            <td>Mirpur</td>
+        </tr>
+        <tr>
+            <td>Barisal Bulls</td>
+            <td>58/10</td>
+            <td>16</td>
+            <td>Sylhet Sixers</td>
+            <td>2015</td>
+            <td>Mirpur</td>
+        </tr>
+        <tr>
+            <td>Sylhet Sixers</td>
+            <td>59/10</td>
+            <td>11.5</td>
+            <td>Rangpur Riders</td>
+            <td>2015</td>
+            <td>Mirpur</td>
+        </tr>
+        <tr>
+            <td>Khulna Titans</td>
+            <td>67/10</td>
+            <td>14.2</td>
+            <td>Chittagong Vikings</td>
+            <td>2013</td>
+            <td>Mirpur</td>
+        </tr>
+        <tr>
+            <td class="last-border">Chittagong Vikings</td>
+            <td class="last-border">67/10</td>
+            <td class="last-border">12</td>
+            <td class="last-border">Sylhet Sixers</td>
+            <td class="last-border">2017</td>
+            <td class="last-border">Mirpur</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="main-content" style="width:100%;">
+    <div class="match-title">
+        Most runs (Batting records)
+    </div>
+    <table class="team-statistics">
+        <tbody>
+        <tr>
+            <th>Batsman</th>
+            <th>Teams</th>
+            <th>Mat</th>
+            <th>Runs</th>
+            <th>Avg</th>
+            <th>100s/50s</th>
+        </tr>
+        <tr>
+            <td>Mahmudullah</td>
+            <td>CHK, BB, KHT</td>
+            <td>63</td>
+            <td>1400</td>
+            <td>27.45</td>
+            <td>0/7</td>
+        </tr>
+        <tr>
+            <td>Tamim Iqbal</td>
+            <td>CHK, DR, CVK, COV</td>
+            <td>44</td>
+            <td>1358</td>
+            <td>34.82</td>
+            <td>0/14</td>
+        </tr>
+        <tr>
+            <td>Mushfiqur Rahim</td>
+            <td>DR, SR, SSS, BB, RK</td>
+            <td>58</td>
+            <td>1357</td>
+            <td>32.30</td>
+            <td>0/8</td>
+        </tr>
+        <tr>
+            <td>Shakib Al Hasan</td>
+            <td>KRB, DG, RR, DD</td>
+            <td>61</td>
+            <td>1182</td>
+            <td>26.26</td>
+            <td>0/3</td>
+        </tr>
+        <tr>
+            <td class="last-border">Imrul Kayes</td>
+            <td class="last-border">SR, RR, COV</td>
+            <td class="last-border">54</td>
+            <td class="last-border">1149</td>
+            <td class="last-border">22.98</td>
+            <td class="last-border">0/4</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="main-content first-title-info" style="width:100%;overflow: auto;">
+    <table class="team-statistics">
+        <tbody>
+
+        <tr>
+            <th colspan="9" style="border:none">
+                <div class="match-title-top" style="width:100%;overflow: auto;">
+                    Most wickets (Bowling records)
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th>Bowlers</th>
+            <th>Teams</th>
+            <th>Mat</th>
+            <th>Ovs</th>
+            <th>Wkts</th>
+            <th>BBI</th>
+            <th>Avgs.</th>
+            <th>Econ.</th>
+            <th>4WI/5WI</th>
+        </tr>
+        <tr>
+            <td>Shakib Al Hasan</td>
+            <td>KRB, DG, RR, DD</td>
+            <td>61</td>
+            <td>224.3</td>
+            <td>83</td>
+            <td>5/16</td>
+            <td>17.87</td>
+            <td>6.61</td>
+            <td>2/1</td>
+        </tr>
+        <tr>
+            <td>Kevon Cooper</td>
+            <td>BB, KHT, DD</td>
+            <td>38</td>
+            <td>139.3</td>
+            <td>63</td>
+            <td>5/15</td>
+            <td>14.01</td>
+            <td>6.32</td>
+            <td>2/1</td>
+        </tr>
+        <tr>
+            <td>Shafiul Islam</td>
+            <td>KRB, BBR, KHT</td>
+            <td>49</td>
+            <td>153</td>
+            <td>54</td>
+            <td>5/26</td>
+            <td>23.09</td>
+            <td>8.15</td>
+            <td>2/1</td>
+        </tr>
+        <tr>
+            <td>Mashrafe Bin Mortaza</td>
+            <td>DG, COV, RR</td>
+            <td>60</td>
+            <td>206.2</td>
+            <td>51</td>
+            <td>3/16</td>
+            <td>27.37</td>
+            <td>6.76</td>
+            <td>0/0</td>
+        </tr>
+        <tr>
+            <td class="last-border">Mohammad Nabi</td>
+            <td class="last-border">SR, CHV, COV</td>
+            <td class="last-border">38</td>
+            <td class="last-border">124.2</td>
+            <td class="last-border">50</td>
+            <td class="last-border">4/24</td>
+            <td class="last-border">16.96</td>
+            <td class="last-border">6.82</td>
+            <td class="last-border">1/0</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="main-content" style="width:100%;margin-bottom:14px">
+    <div class="match-title">
+        All tournament results
+    </div>
+    <table class="team-statistics">
+        <tbody>
+        <tr>
+            <th>Season</th>
+            <th>Winner</th>
+            <th>Runner-up</th>
+            <th>Teams</th>
+        </tr>
+        <tr>
+            <td>2012</td>
+            <td>Dhaka Gladiators</td>
+            <td>Barisal Burners</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>2012–13</td>
+            <td>Dhaka Gladiators</td>
+            <td>Chittagong Kings</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>2015–16</td>
+            <td>Comilla Victorians</td>
+            <td>Barisal Bulls</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>2016–17</td>
+            <td>Dhaka Dynamites</td>
+            <td>Rajshahi Kings</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td class="last-border">2017–18</td>
+            <td class="last-border">Rangpur Riders</td>
+            <td class="last-border">Dhaka Dynamites</td>
+            <td class="last-border">7</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+
